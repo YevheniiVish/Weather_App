@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="container">
+        <div class="search">
+          <input
+            class="search-input"
+            placeholder="Enter the city"
+            type="text"
+          />
+          <div class="search-btn left">
+            <button class="search-btn__item"></button>
+          </div>
+          <div class="search-btn right">
+            <button class="search-btn__item"></button>
+          </div>
+        </div>
+
+        <!-- !шаблон лист поиска стран js-->
+        <ul class="search-list">
+          <li class="search-list-item">
+            <button class="search-list-item__link" href="#">${{name}}</button>
+          </li>
+          <li class="search-list-item">
+            <button class="search-list-item__link" href="#">${{name}}</button>
+          </li>
+          <li class="search-list-item">
+            <button class="search-list-item__link" hidden="true" href="#">
+              ${{name}}
+            </button>
+          </li>
+          <button class="search-list-btn"></button>
+        </ul>
+      </header>
+      <!-- !---------------------------------------------------->
+
+      <section class="today container">
+        <div class="today-box"></div>
+
+        <div class="today-btn">
+          <button class="today-btn__item">Today</button>
+          <button class="today-btn__item">5 days</button>
+        </div>
+      </section>
+
+      <section class="time container">
+        <div class="time-box today-box"></div>
+      </section>
+
+      <section class=""></section>
+    </div>
+  </body>
+</html>
